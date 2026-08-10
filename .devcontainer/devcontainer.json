@@ -2,7 +2,7 @@
   "name": "Horta Inteligente",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
 
-  "postCreateCommand": "cd horta-backend && npm install && cd ../horta-app && npm install",
+  "postCreateCommand": "pip install platformio && cd horta-backend && npm install && cd ../horta-app && npm install",
 
   "customizations": {
     "vscode": {
