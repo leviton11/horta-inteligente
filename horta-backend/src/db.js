@@ -12,6 +12,8 @@ import { getProfileDefaults } from "./data/plantProfiles.js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DB_FILE = path.join(__dirname, "..", "data", "db.json");
 
+fs.mkdirSync(path.dirname(DB_FILE), { recursive: true });
+
 const MAX_HISTORY_PER_DEVICE = 500;
 const ONLINE_THRESHOLD_MS = 2 * 60 * 1000; // 2 minutos sem dados = offline
 
